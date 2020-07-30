@@ -1,2 +1,2 @@
 # hackerrank
-Challenges from Hacker Rank.com
+Challenges from Hacker Rank.com "Problem Solving"
