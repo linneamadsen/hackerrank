@@ -1,0 +1,37 @@
+Link: https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
+My solution was initially to sort the array and then find the largest value in the array and count how many matching values there were. However, this did not work on one of the test cases (see test input value here: https://hr-testcases-us-east-1.s3.amazonaws.com/23074/input04.txt?AWSAccessKeyId=AKIAJ4WZFDFQTZRGO3QA&Expires=1596488336&Signature=f7C788rhQMdZTGgsIpE386AgaME%3D&response-content-type=text%2Fplain) which I think is because the input was too big at an array with 100,000 indicies. This was a bit of a hard one for me to work out. This solution uses a filter and a sort by max.Math, and since this worked, I feel like this means it takes less computing power/energy so that we were able to get my solution. 
+
+Instructions:
+You are in charge of the cake for your niece's birthday and have decided the cake will have one candle for each year of her total age. When she blows out the candles, she’ll only be able to blow out the tallest ones. Your task is to find out how many candles she can successfully blow out.
+
+For example, if your niece is turning  years old, and the cake will have  candles of height , , , , she will be able to blow out  candles successfully, since the tallest candles are of height  and there are  such candles.
+
+Function Description
+
+Complete the function birthdayCakeCandles in the editor below. It must return an integer representing the number of candles she can blow out.
+
+birthdayCakeCandles has the following parameter(s):
+
+ar: an array of integers representing candle heights
+Input Format
+
+The first line contains a single integer, , denoting the number of candles on the cake.
+The second line contains  space-separated integers, where each integer  describes the height of candle .
+
+Constraints
+
+Output Format
+
+Return the number of candles that can be blown out on a new line.
+
+Sample Input 0
+
+4
+3 2 1 3
+Sample Output 0
+
+2
+Explanation 0
+
+We have one candle of height , one candle of height , and two candles of height . Your niece only blows out the tallest candles, meaning the candles where . Because there are  such candles, we print  on a new line.
